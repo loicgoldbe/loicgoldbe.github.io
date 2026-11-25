@@ -1,0 +1,1739 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>91蘑菇厂_蘑菇种植视频_菌菇产业视频社区</title>
+<meta name="description" content="91蘑菇厂官方网站，专业菌菇种植视频内容平台，汇聚蘑菇栽培教程、菌菇产业观察与创作者社区，提供高清原创视频与企业级内容生态服务。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232c4a32'/%3E%3Cpath d='M32 12c-10 0-18 6-18 14h36c0-8-8-14-18-14z' fill='%23e9c46a'/%3E%3Crect x='26' y='26' width='12' height='22' rx='5' fill='%23f4f1e8'/%3E%3Ccircle cx='24' cy='20' r='2.4' fill='%23a3b18a'/%3E%3Ccircle cx='40' cy='21' r='2' fill='%23a3b18a'/%3E%3C/svg%3E">
+<style>
+:root{
+  --mg-forest:#2c4a32;
+  --mg-forest-deep:#1e3324;
+  --mg-moss:#6b8f5e;
+  --mg-sage:#a3b18a;
+  --mg-gold:#e9c46a;
+  --mg-clay:#b08968;
+  --mg-cream:#f6f4ec;
+  --mg-paper:#fffdf7;
+  --mg-ink:#26302a;
+  --mg-muted:#6d7a70;
+  --mg-line:#dde3d6;
+  --mg-radius:14px;
+  --mg-shadow:0 10px 28px rgba(38,48,42,.09);
+  --mg-header-h:118px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:var(--mg-header-h)}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  background:var(--mg-cream);
+  color:var(--mg-ink);
+  line-height:1.75;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul,ol{list-style:none}
+
+/* ============ 吸顶公告 + 页头 ============ */
+.mg-sticky-wrap{
+  position:sticky;top:0;z-index:240;
+  background:var(--mg-paper);
+  box-shadow:0 2px 14px rgba(38,48,42,.08);
+}
+.mg-announce{
+  background:linear-gradient(90deg,var(--mg-forest-deep),var(--mg-forest) 55%,#3d6345);
+  color:#f0efe4;
+  font-size:13.5px;
+  letter-spacing:.2px;
+}
+.mg-announce-inner{
+  max-width:1200px;margin:0 auto;padding:9px 22px;
+  display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+}
+.mg-announce-tag{
+  flex:none;background:var(--mg-gold);color:#3a2c07;
+  font-weight:700;font-size:12px;padding:2px 9px;border-radius:999px;
+  letter-spacing:.5px;
+}
+.mg-announce-track{
+  display:flex;gap:34px;overflow:hidden;white-space:nowrap;
+  mask-image:linear-gradient(90deg,#000 92%,transparent);
+  flex:1;min-width:0;
+}
+.mg-announce-track span{opacity:.94}
+.mg-announce-track b{color:var(--mg-gold);font-weight:600}
+
+.mg-header{
+  border-bottom:1px solid var(--mg-line);
+  background:rgba(255,253,247,.96);
+  backdrop-filter:blur(8px);
+}
+.mg-header-inner{
+  max-width:1200px;margin:0 auto;padding:13px 22px;
+  display:flex;align-items:center;gap:26px;
+}
+.mg-logo{display:flex;align-items:center;gap:11px;flex:none}
+.mg-logo-mark{width:42px;height:42px;flex:none}
+.mg-logo-text{line-height:1.15}
+.mg-logo-name{font-size:19px;font-weight:800;letter-spacing:.5px;color:var(--mg-forest-deep)}
+.mg-logo-sub{font-size:10.5px;color:var(--mg-muted);letter-spacing:2.4px;text-transform:uppercase}
+.mg-nav{display:flex;gap:4px;flex:1;min-width:0}
+.mg-nav a{
+  font-size:14.5px;padding:7px 12px;border-radius:9px;color:#3c4a40;
+  font-weight:500;transition:.2s;white-space:nowrap;
+}
+.mg-nav a:hover,.mg-nav a.is-active{background:#eef2e7;color:var(--mg-forest-deep)}
+.mg-header-tools{display:flex;align-items:center;gap:10px;flex:none}
+.mg-search{
+  display:flex;align-items:center;gap:7px;
+  background:#f0f2ea;border:1px solid var(--mg-line);
+  border-radius:999px;padding:6px 13px;transition:.24s;
+}
+.mg-search:focus-within{border-color:var(--mg-moss);background:#fff;box-shadow:0 0 0 3px rgba(107,143,94,.13)}
+.mg-search input{
+  border:none;outline:none;background:transparent;font-size:13.5px;width:132px;color:var(--mg-ink);
+}
+.mg-search input::placeholder{color:#98a396}
+.mg-search svg{width:15px;height:15px;flex:none;stroke:var(--mg-moss)}
+.mg-nav-toggle{
+  display:none;width:40px;height:40px;border-radius:10px;background:#eef2e7;
+  align-items:center;justify-content:center;
+}
+.mg-nav-toggle span{display:block;width:18px;height:2px;background:var(--mg-forest);position:relative}
+.mg-nav-toggle span::before,.mg-nav-toggle span::after{
+  content:"";position:absolute;left:0;width:18px;height:2px;background:var(--mg-forest);
+}
+.mg-nav-toggle span::before{top:-6px}
+.mg-nav-toggle span::after{top:6px}
+.mg-nav-toggle[aria-expanded="true"] span{background:transparent}
+.mg-nav-toggle[aria-expanded="true"] span::before{top:0;transform:rotate(45deg)}
+.mg-nav-toggle[aria-expanded="true"] span::after{top:0;transform:rotate(-45deg)}
+
+.mg-mobile-nav{display:none;border-top:1px solid var(--mg-line);background:var(--mg-paper)}
+.mg-mobile-nav.is-open{display:block}
+.mg-mobile-nav ul{max-width:1200px;margin:0 auto;padding:8px 22px 16px}
+.mg-mobile-nav li a{display:block;padding:10px 4px;font-size:15px;border-bottom:1px dashed #e7ebdf;color:#37443a}
+
+/* ============ 通用容器 ============ */
+.mg-section{max-width:1200px;margin:0 auto;padding:64px 22px}
+.mg-section--tight{padding-top:46px;padding-bottom:46px}
+.mg-band{background:var(--mg-paper)}
+.mg-band--sage{background:linear-gradient(180deg,#eef2e7,#f6f4ec)}
+.mg-band--deep{background:var(--mg-forest-deep);color:#e8ead9}
+.mg-sec-head{margin-bottom:30px;max-width:820px}
+.mg-eyebrow{
+  display:inline-flex;align-items:center;gap:7px;
+  font-size:12px;letter-spacing:2.4px;font-weight:700;color:var(--mg-moss);
+  text-transform:uppercase;margin-bottom:9px;
+}
+.mg-eyebrow::before{content:"";width:20px;height:2px;background:var(--mg-gold);border-radius:2px}
+.mg-band--deep .mg-eyebrow{color:var(--mg-sage)}
+.mg-sec-head h2{
+  font-size:clamp(22px,2.6vw,30px);line-height:1.32;letter-spacing:.3px;
+  color:var(--mg-forest-deep);font-weight:800;
+}
+.mg-band--deep .mg-sec-head h2{color:#f4f3e6}
+.mg-sec-head p{margin-top:10px;color:var(--mg-muted);font-size:14.6px;max-width:720px}
+.mg-band--deep .mg-sec-head p{color:#b9c4ae}
+.mg-kw{color:var(--mg-forest);font-weight:700}
+.mg-band--deep .mg-kw{color:var(--mg-gold)}
+
+/* ============ 首屏（左文右侧大图 + 数据条） ============ */
+.mg-hero{
+  max-width:1200px;margin:0 auto;padding:52px 22px 60px;
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);
+  gap:46px;align-items:center;
+}
+.mg-hero-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:#e8eee0;border:1px solid #d3ddc8;color:var(--mg-forest);
+  font-size:12.5px;font-weight:700;letter-spacing:.6px;
+  padding:5px 13px;border-radius:999px;margin-bottom:20px;
+}
+.mg-hero-badge i{width:7px;height:7px;border-radius:50%;background:var(--mg-moss);display:block;box-shadow:0 0 0 3px rgba(107,143,94,.2)}
+.mg-hero h1{
+  font-size:clamp(34px,4.9vw,57px);line-height:1.1;font-weight:900;
+  letter-spacing:-.5px;color:var(--mg-forest-deep);
+}
+.mg-hero h1 em{
+  font-style:normal;color:var(--mg-clay);
+  background:linear-gradient(180deg,transparent 62%,rgba(233,196,106,.5) 62%);
+}
+.mg-hero-lead{margin-top:18px;font-size:16.5px;color:#47544a;max-width:520px}
+.mg-hero-intro{
+  margin-top:18px;font-size:14.4px;color:var(--mg-muted);
+  border-left:3px solid var(--mg-sage);padding-left:15px;line-height:1.85;
+}
+.mg-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.mg-btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:11px 22px;border-radius:999px;font-size:14.5px;font-weight:700;
+  transition:.22s;letter-spacing:.3px;
+}
+.mg-btn--primary{background:var(--mg-forest);color:#f6f4ec;box-shadow:0 8px 20px rgba(44,74,50,.28)}
+.mg-btn--primary:hover{background:var(--mg-forest-deep);transform:translateY(-2px)}
+.mg-btn--ghost{border:1.5px solid #cbd6c1;color:var(--mg-forest);background:rgba(255,255,255,.55)}
+.mg-btn--ghost:hover{background:#fff;border-color:var(--mg-moss)}
+.mg-btn--gold{background:var(--mg-gold);color:#3c2d06}
+.mg-btn--gold:hover{background:#f0d386}
+.mg-hero-stats{
+  margin-top:32px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px;padding-top:24px;border-top:1px solid var(--mg-line);
+}
+.mg-stat-num{font-size:26px;font-weight:900;color:var(--mg-forest-deep);letter-spacing:-.4px;line-height:1.2}
+.mg-stat-num small{font-size:13px;font-weight:700;color:var(--mg-moss);margin-left:2px}
+.mg-stat-label{font-size:12.5px;color:var(--mg-muted);margin-top:3px}
+
+.mg-hero-visual{position:relative}
+.mg-hero-frame{
+  border-radius:22px;overflow:hidden;box-shadow:0 26px 60px rgba(30,51,36,.24);
+  border:1px solid #dae2d0;background:#dfe7d5;aspect-ratio:4/3.35;
+}
+.mg-hero-frame svg{width:100%;height:100%}
+.mg-hero-float{
+  position:absolute;left:-16px;bottom:22px;
+  background:var(--mg-paper);border:1px solid var(--mg-line);
+  border-radius:14px;padding:12px 16px;box-shadow:var(--mg-shadow);
+  display:flex;align-items:center;gap:11px;max-width:280px;
+}
+.mg-hero-float-ico{
+  width:34px;height:34px;border-radius:10px;background:#e8eee0;
+  display:flex;align-items:center;justify-content:center;flex:none;
+}
+.mg-hero-float-ico svg{width:18px;height:18px;stroke:var(--mg-forest)}
+.mg-hero-float-t{font-size:13px;font-weight:800;color:var(--mg-forest-deep);line-height:1.3}
+.mg-hero-float-s{font-size:11.5px;color:var(--mg-muted)}
+
+/* ============ 视频列表（图文交替单列 / 一幅重点大图与文字列表） ============ */
+.mg-feature-grid{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,1fr);gap:30px;align-items:start}
+.mg-feature-main{
+  background:var(--mg-paper);border:1px solid var(--mg-line);border-radius:var(--mg-radius);
+  overflow:hidden;box-shadow:var(--mg-shadow);
+}
+.mg-feature-cover{position:relative;aspect-ratio:16/9;background:#e4ebda;overflow:hidden}
+.mg-feature-cover svg{width:100%;height:100%}
+.mg-play{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:60px;height:60px;border-radius:50%;background:rgba(30,51,36,.78);
+  display:flex;align-items:center;justify-content:center;
+  border:2px solid rgba(255,255,255,.7);transition:.24s;backdrop-filter:blur(2px);
+}
+.mg-play:hover{transform:translate(-50%,-50%) scale(1.08);background:var(--mg-forest)}
+.mg-play svg{width:20px;height:20px;fill:#fff;margin-left:3px}
+.mg-feature-body{padding:22px 24px 24px}
+.mg-tag-row{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:12px}
+.mg-tag{
+  font-size:11.5px;font-weight:700;padding:3px 10px;border-radius:999px;
+  background:#eef2e7;color:#4d6a44;letter-spacing:.3px;
+}
+.mg-tag--gold{background:#fbf1d8;color:#8a6416}
+.mg-tag--clay{background:#f4e9e1;color:#8e5f3d}
+.mg-feature-body h3{font-size:21px;line-height:1.42;color:var(--mg-forest-deep);font-weight:800}
+.mg-feature-body p{margin-top:10px;font-size:14.3px;color:#57645a}
+.mg-meta-row{
+  display:flex;flex-wrap:wrap;align-items:center;gap:14px;
+  margin-top:16px;font-size:12.8px;color:var(--mg-muted);
+}
+.mg-meta-author{display:flex;align-items:center;gap:7px;font-weight:700;color:#3f5345}
+.mg-avatar{
+  width:26px;height:26px;border-radius:50%;flex:none;
+  display:flex;align-items:center;justify-content:center;
+  font-size:11.5px;font-weight:800;color:#fff;letter-spacing:0;
+}
+.mg-num{display:inline-flex;align-items:center;gap:4px}
+.mg-num svg{width:13px;height:13px;stroke:#8b968c;fill:none;stroke-width:1.7}
+.mg-act-row{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px;padding-top:16px;border-top:1px dashed #e3e8db}
+.mg-act{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:12.8px;font-weight:600;padding:6px 13px;border-radius:999px;
+  background:#f1f4eb;color:#4c5b4f;transition:.2s;border:1px solid transparent;
+}
+.mg-act:hover{background:#e5ebdc;border-color:#d2dcc6}
+.mg-act svg{width:14px;height:14px;stroke:#5e7360;fill:none;stroke-width:1.8}
+.mg-act.is-on{background:#fbf1d8;color:#8a6416;border-color:#eeddb2}
+.mg-act.is-on svg{stroke:#8a6416;fill:#e9c46a}
+.mg-act--heart.is-on svg{fill:#d9776a;stroke:#d9776a}
+
+.mg-video-list{display:flex;flex-direction:column;gap:14px}
+.mg-video-item{
+  display:grid;grid-template-columns:86px minmax(0,1fr);gap:15px;
+  background:var(--mg-paper);border:1px solid var(--mg-line);
+  border-radius:12px;padding:14px;transition:.22s;
+}
+.mg-video-item:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(38,48,42,.11);border-color:#c9d6bd}
+.mg-video-thumb{
+  aspect-ratio:1/1;border-radius:9px;overflow:hidden;background:#e4ebda;
+}
+.mg-video-thumb svg{width:100%;height:100%}
+.mg-video-cap h4{font-size:15.2px;line-height:1.45;font-weight:800;color:var(--mg-forest-deep)}
+.mg-video-cap p{font-size:12.8px;color:var(--mg-muted);margin-top:5px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.mg-video-foot{display:flex;flex-wrap:wrap;gap:11px;margin-top:8px;font-size:11.8px;color:#8b968c}
+.mg-video-foot b{color:#5c6d5e;font-weight:700}
+
+/* ============ H2 区块里的关键词解析长文 ============ */
+.mg-article-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.82fr);gap:36px;align-items:start}
+.mg-prose h3{font-size:18px;font-weight:800;color:var(--mg-forest-deep);margin:26px 0 9px;padding-left:12px;border-left:3px solid var(--mg-gold)}
+.mg-prose h3:first-child{margin-top:0}
+.mg-prose p{font-size:14.7px;color:#4d5a50;margin-bottom:13px;text-align:justify}
+.mg-prose strong{color:var(--mg-forest);font-weight:700}
+.mg-side-card{
+  background:var(--mg-paper);border:1px solid var(--mg-line);border-radius:var(--mg-radius);
+  padding:22px;box-shadow:var(--mg-shadow);margin-bottom:18px;
+}
+.mg-side-card h4{font-size:15px;font-weight:800;color:var(--mg-forest-deep);margin-bottom:13px;display:flex;align-items:center;gap:7px}
+.mg-side-card h4::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--mg-gold)}
+.mg-check-list li{
+  font-size:13.4px;color:#54625a;padding:9px 0;border-bottom:1px dashed #e7ebdf;display:flex;gap:9px;
+}
+.mg-check-list li:last-child{border-bottom:none;padding-bottom:0}
+.mg-check-list li svg{width:15px;height:15px;flex:none;margin-top:4px;stroke:var(--mg-moss);fill:none;stroke-width:2.2}
+.mg-quote{
+  background:linear-gradient(135deg,#eef2e7,#e3ebd9);border-radius:var(--mg-radius);
+  padding:20px 22px;font-size:14px;color:#3f5345;line-height:1.8;
+  border-left:4px solid var(--mg-moss);
+}
+.mg-quote span{display:block;margin-top:10px;font-size:12.5px;color:var(--mg-muted);font-weight:700}
+
+/* ============ 专题 ============ */
+.mg-topic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.mg-topic-card{
+  background:var(--mg-paper);border:1px solid var(--mg-line);border-radius:var(--mg-radius);
+  overflow:hidden;display:flex;flex-direction:column;transition:.24s;
+}
+.mg-topic-card:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(38,48,42,.13)}
+.mg-topic-cover{aspect-ratio:16/9;overflow:hidden;background:#e4ebda;position:relative}
+.mg-topic-cover svg{width:100%;height:100%}
+.mg-topic-status{
+  position:absolute;right:10px;top:10px;font-size:11px;font-weight:700;
+  background:rgba(255,253,247,.94);color:#4d6a44;padding:3px 9px;border-radius:999px;
+}
+.mg-topic-body{padding:18px 20px 20px;flex:1;display:flex;flex-direction:column}
+.mg-topic-body h3{font-size:16.5px;font-weight:800;color:var(--mg-forest-deep);line-height:1.45}
+.mg-topic-body>p{font-size:13.2px;color:var(--mg-muted);margin-top:7px;flex:1}
+.mg-topic-items{margin-top:14px;border-top:1px dashed #e3e8db;padding-top:12px;display:flex;flex-direction:column;gap:8px}
+.mg-topic-items li{font-size:12.8px;color:#51604f;display:flex;gap:7px;align-items:flex-start}
+.mg-topic-items li::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--mg-sage);margin-top:7px;flex:none}
+
+/* ============ 创作者矩阵（双列简介） ============ */
+.mg-author-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.mg-author-card{
+  background:var(--mg-paper);border:1px solid var(--mg-line);border-radius:var(--mg-radius);
+  padding:20px;display:grid;grid-template-columns:60px minmax(0,1fr);gap:16px;transition:.24s;
+}
+.mg-author-card:hover{box-shadow:0 14px 30px rgba(38,48,42,.11);border-color:#c9d6bd;transform:translateY(-2px)}
+.mg-author-face{
+  width:60px;height:60px;border-radius:18px;overflow:hidden;flex:none;
+  display:flex;align-items:center;justify-content:center;
+  font-size:22px;font-weight:900;color:#fff;
+}
+.mg-author-name{font-size:16px;font-weight:800;color:var(--mg-forest-deep);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.mg-author-role{font-size:11px;font-weight:700;background:#eef2e7;color:#4d6a44;padding:2px 8px;border-radius:999px;letter-spacing:.3px}
+.mg-author-field{font-size:12.6px;color:var(--mg-moss);font-weight:700;margin-top:3px}
+.mg-author-nums{display:flex;gap:16px;margin:8px 0 9px;font-size:12.2px;color:var(--mg-muted)}
+.mg-author-nums b{color:var(--mg-forest-deep);font-weight:800}
+.mg-author-bio{font-size:13px;color:#5a685d;line-height:1.72}
+.mg-author-more{margin-top:11px}
+.mg-author-more button{
+  font-size:12.4px;font-weight:700;color:var(--mg-forest);
+  border-bottom:1.5px solid #cfdcca;padding-bottom:1px;
+}
+.mg-author-more button:hover{border-color:var(--mg-forest)}
+
+/* ============ 榜单 ============ */
+.mg-rank-wrap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.mg-rank-col{background:rgba(255,253,247,.07);border:1px solid rgba(163,177,138,.28);border-radius:var(--mg-radius);padding:20px}
+.mg-rank-col h3{font-size:15.5px;font-weight:800;color:#f2f3e4;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.mg-rank-col h3 i{width:6px;height:6px;border-radius:50%;background:var(--mg-gold);display:block;flex:none}
+.mg-rank-list li{
+  display:grid;grid-template-columns:22px minmax(0,1fr) auto;gap:9px;align-items:start;
+  padding:10px 0;border-bottom:1px dashed rgba(163,177,138,.22);font-size:13.2px;
+}
+.mg-rank-list li:last-child{border-bottom:none;padding-bottom:0}
+.mg-rank-no{font-weight:900;font-size:13.5px;color:var(--mg-sage)}
+.mg-rank-list li:nth-child(1) .mg-rank-no{color:var(--mg-gold)}
+.mg-rank-title{color:#e6ead9;line-height:1.5}
+.mg-rank-val{font-size:11.8px;color:#98a88c;font-weight:700;white-space:nowrap;padding-top:2px}
+
+/* ============ 评价（双列短评） ============ */
+.mg-review-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.mg-review{
+  background:var(--mg-paper);border:1px solid var(--mg-line);border-radius:12px;padding:18px 20px;
+  position:relative;
+}
+.mg-review:nth-child(3n+2){background:#f4f7ee}
+.mg-review-top{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+.mg-review-stars{color:var(--mg-gold);font-size:13px;letter-spacing:1.5px}
+.mg-review-user{font-size:13px;font-weight:800;color:var(--mg-forest-deep)}
+.mg-review-tag{font-size:11px;color:#8b968c;margin-left:auto;background:#eef2e7;padding:2px 8px;border-radius:999px}
+.mg-review p{font-size:13.4px;color:#51604f;line-height:1.75}
+
+/* ============ 动态 / 合作 / FAQ ============ */
+.mg-dynamic-list{display:flex;flex-direction:column;gap:2px}
+.mg-dynamic-item{
+  display:grid;grid-template-columns:88px minmax(0,1fr);gap:18px;
+  padding:15px 0;border-bottom:1px dashed #e3e8db;
+}
+.mg-dynamic-item:last-child{border-bottom:none}
+.mg-dynamic-date{font-size:12.6px;font-weight:800;color:var(--mg-moss);letter-spacing:.4px;padding-top:2px}
+.mg-dynamic-item h4{font-size:14.8px;font-weight:800;color:var(--mg-forest-deep);line-height:1.5}
+.mg-dynamic-item p{font-size:13.2px;color:var(--mg-muted);margin-top:4px}
+
+.mg-partner-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.mg-partner{
+  background:var(--mg-paper);border:1px solid var(--mg-line);border-radius:12px;
+  padding:18px 14px;text-align:center;transition:.22s;
+}
+.mg-partner:hover{border-color:#c9d6bd;background:#fbfcf7}
+.mg-partner-mark{
+  width:38px;height:38px;border-radius:11px;margin:0 auto 10px;
+  display:flex;align-items:center;justify-content:center;font-weight:900;font-size:15px;color:#fff;
+}
+.mg-partner-name{font-size:13.4px;font-weight:800;color:var(--mg-forest-deep)}
+.mg-partner-desc{font-size:11.6px;color:var(--mg-muted);margin-top:3px}
+
+.mg-faq{display:flex;flex-direction:column;gap:11px;max-width:880px}
+.mg-faq details{
+  background:var(--mg-paper);border:1px solid var(--mg-line);border-radius:12px;
+  padding:0 20px;transition:.22s;
+}
+.mg-faq details[open]{border-color:#c9d6bd;box-shadow:0 10px 24px rgba(38,48,42,.07)}
+.mg-faq summary{
+  list-style:none;cursor:pointer;padding:16px 0;font-size:14.8px;font-weight:800;
+  color:var(--mg-forest-deep);display:flex;align-items:center;gap:12px;
+}
+.mg-faq summary::-webkit-details-marker{display:none}
+.mg-faq summary::after{
+  content:"+";margin-left:auto;font-size:19px;font-weight:400;color:var(--mg-moss);flex:none;line-height:1;
+}
+.mg-faq details[open] summary::after{content:"−"}
+.mg-faq details p{font-size:13.6px;color:#54625a;padding-bottom:18px;border-top:1px dashed #e7ebdf;padding-top:12px}
+
+/* ============ 投稿/联系 ============ */
+.mg-cta{
+  display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:30px;
+  background:linear-gradient(120deg,var(--mg-forest-deep),#34543c);
+  border-radius:20px;padding:38px 40px;color:#e9ecdd;align-items:center;
+}
+.mg-cta h2{font-size:clamp(21px,2.4vw,27px);font-weight:900;color:#f6f4ea;line-height:1.35}
+.mg-cta p{font-size:14px;color:#bfcbaf;margin-top:11px;max-width:520px}
+.mg-cta-actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:flex-end}
+.mg-cta-actions .mg-btn--ghost{border-color:rgba(233,236,221,.4);color:#eef2e0;background:transparent}
+.mg-cta-actions .mg-btn--ghost:hover{background:rgba(233,236,221,.12);border-color:#eef2e0}
+
+/* ============ 页脚 ============ */
+.mg-footer{background:#182a1e;color:#a9b79c;padding:52px 22px 26px}
+.mg-footer-inner{max-width:1200px;margin:0 auto}
+.mg-footer-top{display:grid;grid-template-columns:1.4fr repeat(3,minmax(0,1fr));gap:34px}
+.mg-footer-brand .mg-logo-name{color:#f2f3e4}
+.mg-footer-brand .mg-logo-sub{color:#87977b}
+.mg-footer-desc{font-size:13.2px;line-height:1.85;margin-top:15px;max-width:330px;color:#93a287}
+.mg-footer h4{font-size:13.5px;font-weight:800;color:#e8ebda;margin-bottom:13px;letter-spacing:.4px}
+.mg-footer-links li{margin-bottom:9px}
+.mg-footer-links a{font-size:13px;color:#93a287;transition:.2s}
+.mg-footer-links a:hover{color:var(--mg-gold)}
+.mg-footer-bottom{
+  margin-top:36px;padding-top:20px;border-top:1px solid rgba(169,183,156,.18);
+  display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
+  font-size:12.2px;color:#7f8f74;
+}
+
+/* ============ 回到顶部 ============ */
+.mg-top-btn{
+  position:fixed;right:22px;bottom:26px;width:46px;height:46px;border-radius:50%;
+  background:var(--mg-forest);color:#f2f3e4;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 10px 24px rgba(30,51,36,.34);z-index:200;
+  opacity:0;visibility:hidden;transform:translateY(12px);transition:.28s;
+}
+.mg-top-btn.is-show{opacity:1;visibility:visible;transform:translateY(0)}
+.mg-top-btn svg{width:19px;height:19px;stroke:#f2f3e4;fill:none;stroke-width:2.2}
+
+/* ============ 弹窗 / Toast ============ */
+.mg-modal{
+  position:fixed;inset:0;z-index:400;display:none;
+  align-items:center;justify-content:center;padding:22px;
+  background:rgba(24,42,30,.55);backdrop-filter:blur(3px);
+}
+.mg-modal.is-open{display:flex}
+.mg-modal-box{
+  background:var(--mg-paper);border-radius:18px;max-width:520px;width:100%;
+  padding:28px 26px;box-shadow:0 30px 70px rgba(0,0,0,.28);position:relative;
+  max-height:86vh;overflow:auto;
+}
+.mg-modal-box h3{font-size:19px;font-weight:900;color:var(--mg-forest-deep);margin-bottom:8px;padding-right:30px}
+.mg-modal-box p{font-size:13.8px;color:#54625a;margin-bottom:16px}
+.mg-modal-close{
+  position:absolute;right:14px;top:13px;width:30px;height:30px;border-radius:50%;
+  background:#eef2e7;color:#4d6a44;font-size:16px;display:flex;align-items:center;justify-content:center;
+}
+.mg-modal-close:hover{background:#e0e8d5}
+.mg-field{margin-bottom:13px}
+.mg-field label{display:block;font-size:12.6px;font-weight:800;color:#4c5b4f;margin-bottom:5px}
+.mg-field input,.mg-field textarea,.mg-field select{
+  width:100%;border:1px solid var(--mg-line);border-radius:9px;padding:9px 12px;
+  font-size:13.4px;font-family:inherit;background:#fbfcf7;color:var(--mg-ink);outline:none;transition:.2s;
+}
+.mg-field input:focus,.mg-field textarea:focus,.mg-field select:focus{border-color:var(--mg-moss);background:#fff;box-shadow:0 0 0 3px rgba(107,143,94,.12)}
+.mg-field textarea{resize:vertical;min-height:86px}
+.mg-modal-submit{width:100%;justify-content:center;margin-top:6px}
+
+.mg-toast{
+  position:fixed;left:50%;bottom:36px;transform:translate(-50%,20px);
+  background:#1e3324;color:#f2f3e4;font-size:13.4px;font-weight:600;
+  padding:11px 22px;border-radius:999px;z-index:600;
+  box-shadow:0 12px 30px rgba(30,51,36,.34);
+  opacity:0;visibility:hidden;transition:.28s;max-width:86vw;text-align:center;
+}
+.mg-toast.is-show{opacity:1;visibility:visible;transform:translate(-50%,0)}
+
+.mg-search-tip{
+  max-width:1200px;margin:0 auto;padding:0 22px 12px;
+  font-size:13px;color:var(--mg-moss);font-weight:600;display:none;
+}
+.mg-search-tip.is-show{display:block}
+
+.mg-empty{
+  text-align:center;padding:22px;color:var(--mg-muted);font-size:13.5px;
+  border:1px dashed #cfdcca;border-radius:12px;background:#fbfcf7;display:none;
+}
+.mg-empty.is-show{display:block}
+
+/* ============ 响应式 ============ */
+@media (max-width:1000px){
+  .mg-hero{grid-template-columns:1fr;gap:34px;padding-top:38px}
+  .mg-hero-intro{max-width:100%}
+  .mg-hero-visual{order:-1}
+  .mg-hero-float{left:12px;bottom:12px}
+  .mg-feature-grid{grid-template-columns:1fr}
+  .mg-article-grid{grid-template-columns:1fr;gap:24px}
+  .mg-topic-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .mg-rank-wrap{grid-template-columns:1fr}
+  .mg-partner-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .mg-cta{grid-template-columns:1fr;padding:30px 26px}
+  .mg-cta-actions{justify-content:flex-start}
+  .mg-footer-top{grid-template-columns:1fr 1fr;gap:28px}
+}
+@media (max-width:860px){
+  .mg-nav{display:none}
+  .mg-nav-toggle{display:flex}
+  .mg-header-inner{gap:14px}
+  .mg-search input{width:98px}
+  .mg-author-grid{grid-template-columns:1fr}
+  .mg-review-grid{grid-template-columns:1fr}
+  .mg-dynamic-item{grid-template-columns:1fr;gap:4px}
+  .mg-dynamic-date{padding-top:0}
+}
+@media (max-width:600px){
+  :root{--mg-header-h:150px}
+  .mg-section{padding:44px 18px}
+  .mg-hero{padding:28px 18px 42px}
+  .mg-hero h1{font-size:clamp(29px,8.6vw,38px)}
+  .mg-hero-stats{grid-template-columns:1fr;gap:14px}
+  .mg-topic-grid{grid-template-columns:1fr}
+  .mg-video-item{grid-template-columns:70px minmax(0,1fr)}
+  .mg-author-card{grid-template-columns:50px minmax(0,1fr);gap:13px;padding:17px}
+  .mg-author-face{width:50px;height:50px;border-radius:14px;font-size:18px}
+  .mg-hero-float{position:static;margin-top:14px;max-width:100%}
+  .mg-partner-grid{grid-template-columns:1fr 1fr}
+  .mg-footer-top{grid-template-columns:1fr}
+  .mg-announce-inner{padding:8px 18px}
+  .mg-announce-track{display:none}
+  .mg-search{display:none}
+  .mg-top-btn{right:14px;bottom:16px;width:42px;height:42px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<!-- ============ S1 公告条 + 页头（吸顶） ============ -->
+<div class="mg-sticky-wrap">
+  <div class="mg-announce" role="region" aria-label="官网公告">
+    <div class="mg-announce-inner">
+      <span class="mg-announce-tag">官方发布</span>
+      <div class="mg-announce-track">
+        <span><b>新增</b>《菌包灭菌七十二小时》超清完整版上线，首次公开三段温控曲线</span>
+        <span><b>报名</b>第二届“菌菇影像挑战”开放投稿，评审团新增 4 位行业顾问</span>
+        <span><b>更新</b>创作者后台高清下载通道升级，支持 4K 原片批量导出</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="mg-header">
+    <div class="mg-header-inner">
+      <a class="mg-logo" href="#mg-top" aria-label="91蘑菇厂官方网站首页">
+        <svg class="mg-logo-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="15" fill="#2c4a32"/>
+          <path d="M32 11c-10.5 0-18.6 6.4-18.6 14.6h37.2C50.6 17.4 42.5 11 32 11z" fill="#e9c46a"/>
+          <rect x="25.5" y="25.6" width="13" height="23" rx="5.5" fill="#f6f4ec"/>
+          <circle cx="23.6" cy="19.4" r="2.6" fill="#a3b18a"/>
+          <circle cx="40.6" cy="20.2" r="2.1" fill="#a3b18a"/>
+          <circle cx="32" cy="17.4" r="1.5" fill="#f6f4ec"/>
+        </svg>
+        <span class="mg-logo-text">
+          <span class="mg-logo-name">91蘑菇厂</span>
+          <span class="mg-logo-sub">MUSHROOM&nbsp;FACTORY</span>
+        </span>
+      </a>
+
+      <nav class="mg-nav" aria-label="主导航">
+        <a href="#mg-videos" class="is-active">精品视频</a>
+        <a href="#mg-knowledge">关键词解析</a>
+        <a href="#mg-topics">专题企划</a>
+        <a href="#mg-authors">创作者</a>
+        <a href="#mg-rank">数据榜单</a>
+        <a href="#mg-faq">帮助中心</a>
+      </nav>
+
+      <div class="mg-header-tools">
+        <div class="mg-search">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+          <input type="search" id="mg-search-input" placeholder="搜索菌菇视频 / 创作者" aria-label="站内搜索">
+        </div>
+        <button class="mg-nav-toggle" id="mg-nav-toggle" aria-expanded="false" aria-controls="mg-mobile-nav" aria-label="展开导航菜单">
+          <span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mg-mobile-nav" id="mg-mobile-nav">
+      <ul>
+        <li><a href="#mg-videos">精品视频</a></li>
+        <li><a href="#mg-knowledge">关键词解析</a></li>
+        <li><a href="#mg-topics">专题企划</a></li>
+        <li><a href="#mg-authors">创作者</a></li>
+        <li><a href="#mg-rank">数据榜单</a></li>
+        <li><a href="#mg-dynamics">企业动态</a></li>
+        <li><a href="#mg-community">用户评价</a></li>
+        <li><a href="#mg-faq">帮助中心</a></li>
+      </ul>
+    </div>
+  </header>
+</div>
+<div class="mg-search-tip" id="mg-search-tip"></div>
+
+<main id="mg-top">
+
+<!-- ============ S2 品牌首屏（左文右侧大图 + 数据条） ============ -->
+<section class="mg-hero" aria-labelledby="mg-hero-title">
+  <div class="mg-hero-copy">
+    <span class="mg-hero-badge"><i></i>91蘑菇厂 · 企业级菌菇影像官网</span>
+    <h1 id="mg-hero-title">91蘑菇厂<em>菌菇产业视频</em></h1>
+    <p class="mg-hero-lead">从一支菌棒到一桌鲜菇，我们用高清镜头记录整条产业链的真实细节。这里是 91蘑菇厂官方网站，也是菌菇从业者与爱好者共同运营的视频内容社区。</p>
+    <p class="mg-hero-intro">作为深耕菌菇垂直领域的品牌，91蘑菇厂持续为种植户、科研团队与内容创作者搭建高品质内容生态，坚持原创、正版与专业，把每一段可复用的种植经验做成值得信赖的影像资料。</p>
+    <div class="mg-hero-actions">
+      <a class="mg-btn mg-btn--primary" href="#mg-videos">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        观看精品内容
+      </a>
+      <a class="mg-btn mg-btn--ghost" href="#mg-authors">认识创作者</a>
+      <button class="mg-btn mg-btn--gold" data-mg-modal="submit">投稿入口</button>
+    </div>
+    <div class="mg-hero-stats">
+      <div>
+        <div class="mg-stat-num" data-mg-count="1860">1860<small>+</small></div>
+        <div class="mg-stat-label">原创高清视频累计上线</div>
+      </div>
+      <div>
+        <div class="mg-stat-num" data-mg-count="247">247<small>位</small></div>
+        <div class="mg-stat-label">认证创作者持续更新</div>
+      </div>
+      <div>
+        <div class="mg-stat-num" data-mg-count="96">96<small>%</small></div>
+        <div class="mg-stat-label">用户口碑推荐率</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mg-hero-visual">
+    <div class="mg-hero-frame">
+      <svg viewBox="0 0 800 660" role="img" aria-label="菌菇厂房内整齐排列的菌架与成排菌包，暖光从顶部天窗洒落">
+        <defs>
+          <linearGradient id="mgHeroSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#3f5f45"/>
+            <stop offset="1" stop-color="#223a29"/>
+          </linearGradient>
+          <linearGradient id="mgHeroLight" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#f4e3af" stop-opacity=".9"/>
+            <stop offset="1" stop-color="#f4e3af" stop-opacity="0"/>
+          </linearGradient>
+          <linearGradient id="mgHeroShelf" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#b08968"/>
+            <stop offset="1" stop-color="#87694f"/>
+          </linearGradient>
+          <linearGradient id="mgHeroPack" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#f6f4ec"/>
+            <stop offset="1" stop-color="#d9dfcb"/>
+          </linearGradient>
+        </defs>
+        <rect width="800" height="660" fill="url(#mgHeroSky)"/>
+        <path d="M0 0h800v230L0 330z" fill="#2b4631" opacity=".55"/>
+        <polygon points="150,0 330,0 470,230 230,230" fill="url(#mgHeroLight)"/>
+        <polygon points="520,0 640,0 720,180 545,180" fill="url(#mgHeroLight)" opacity=".55"/>
+        <!-- 菌架 -->
+        <g>
+          <rect x="60" y="300" width="680" height="14" rx="4" fill="url(#mgHeroShelf)"/>
+          <rect x="60" y="430" width="680" height="14" rx="4" fill="url(#mgHeroShelf)"/>
+          <rect x="60" y="560" width="680" height="14" rx="4" fill="url(#mgHeroShelf)"/>
+          <rect x="96" y="300" width="12" height="330" fill="#7a5f47"/>
+          <rect x="692" y="300" width="12" height="330" fill="#7a5f47"/>
+        </g>
+        <!-- 上层菌包 -->
+        <g>
+          <rect x="120" y="222" width="66" height="80" rx="14" fill="url(#mgHeroPack)"/>
+          <rect x="212" y="212" width="66" height="90" rx="14" fill="url(#mgHeroPack)"/>
+          <rect x="304" y="228" width="66" height="74" rx="14" fill="url(#mgHeroPack)"/>
+          <rect x="396" y="210" width="66" height="92" rx="14" fill="url(#mgHeroPack)"/>
+          <rect x="488" y="224" width="66" height="78" rx="14" fill="url(#mgHeroPack)"/>
+          <rect x="580" y="216" width="66" height="86" rx="14" fill="url(#mgHeroPack)"/>
+        </g>
+        <g fill="#c7b9a2">
+          <circle cx="153" cy="222" r="12"/><circle cx="245" cy="212" r="11"/><circle cx="337" cy="228" r="12"/>
+          <circle cx="429" cy="210" r="11"/><circle cx="521" cy="224" r="12"/><circle cx="613" cy="216" r="11"/>
+        </g>
+        <!-- 中层菌包 -->
+        <g>
+          <rect x="120" y="352" width="66" height="78" rx="14" fill="url(#mgHeroPack)" opacity=".96"/>
+          <rect x="212" y="344" width="66" height="86" rx="14" fill="url(#mgHeroPack)" opacity=".96"/>
+          <rect x="304" y="356" width="66" height="74" rx="14" fill="url(#mgHeroPack)" opacity=".96"/>
+          <rect x="396" y="342" width="66" height="88" rx="14" fill="url(#mgHeroPack)" opacity=".96"/>
+          <rect x="488" y="354" width="66" height="76" rx="14" fill="url(#mgHeroPack)" opacity=".96"/>
+          <rect x="580" y="346" width="66" height="84" rx="14" fill="url(#mgHeroPack)" opacity=".96"/>
+        </g>
+        <g fill="#ded2bb">
+          <circle cx="153" cy="352" r="11"/><circle cx="245" cy="344" r="11"/><circle cx="337" cy="356" r="11"/>
+          <circle cx="429" cy="342" r="11"/><circle cx="521" cy="354" r="11"/><circle cx="613" cy="346" r="11"/>
+        </g>
+        <!-- 下层菌包 -->
+        <g>
+          <rect x="120" y="482" width="66" height="78" rx="14" fill="url(#mgHeroPack)" opacity=".9"/>
+          <rect x="212" y="474" width="66" height="86" rx="14" fill="url(#mgHeroPack)" opacity=".9"/>
+          <rect x="304" y="486" width="66" height="74" rx="14" fill="url(#mgHeroPack)" opacity=".9"/>
+          <rect x="396" y="472" width="66" height="88" rx="14" fill="url(#mgHeroPack)" opacity=".9"/>
+          <rect x="488" y="484" width="66" height="76" rx="14" fill="url(#mgHeroPack)" opacity=".9"/>
+          <rect x="580" y="476" width="66" height="84" rx="14" fill="url(#mgHeroPack)" opacity=".9"/>
+        </g>
+        <!-- 地面反光 -->
+        <rect x="0" y="596" width="800" height="64" fill="#182d1f"/>
+        <g opacity=".35" fill="#e9c46a">
+          <ellipse cx="300" cy="626" rx="180" ry="10"/>
+          <ellipse cx="560" cy="636" rx="130" ry="8"/>
+        </g>
+      </svg>
+    </div>
+    <div class="mg-hero-float">
+      <span class="mg-hero-float-ico">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" aria-hidden="true"><path d="M12 3v18M5 8l7-5 7 5M5 16l7 5 7-5"/></svg>
+      </span>
+      <div>
+        <div class="mg-hero-float-t">本周更新 12 支高清视频</div>
+        <div class="mg-hero-float-s">温控 · 采收 · 分级 · 深加工</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S3 精品视频（一幅重点大图与文字列表） ============ -->
+<section class="mg-section" id="mg-videos" aria-labelledby="mg-videos-title">
+  <div class="mg-sec-head">
+    <span class="mg-eyebrow">精品内容</span>
+    <h2 id="mg-videos-title">91蘑菇厂本期主推：菌菇高清视频与创作者实战记录</h2>
+    <p>官方编辑团队从每周新增内容中挑选重点作品，围绕菌菇生产的真实工序展开，兼顾专业深度与观看体验，适合种植户复盘，也适合新入行的朋友建立整体认知。</p>
+  </div>
+
+  <div class="mg-feature-grid">
+    <article class="mg-feature-main">
+      <div class="mg-feature-cover">
+        <svg viewBox="0 0 800 450" role="img" aria-label="双孢菇栽培床近景，白色菌盖成簇生长在褐色培养料上">
+          <defs>
+            <linearGradient id="mgV1bg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#4c3a2b"/>
+              <stop offset="1" stop-color="#2b2018"/>
+            </linearGradient>
+            <radialGradient id="mgV1cap" cx=".4" cy=".32" r=".78">
+              <stop offset="0" stop-color="#fdfbf3"/>
+              <stop offset=".65" stop-color="#e6e0d0"/>
+              <stop offset="1" stop-color="#c4baa4"/>
+            </radialGradient>
+          </defs>
+          <rect width="800" height="450" fill="url(#mgV1bg)"/>
+          <path d="M0 300q200 -80 400 -20t400 -10v180H0z" fill="#5b4432"/>
+          <path d="M0 350q220 -50 400 0t400 -20v120H0z" fill="#473528"/>
+          <g>
+            <g transform="translate(140 300)">
+              <ellipse cx="0" cy="8" rx="34" ry="9" fill="#2b2018" opacity=".5"/>
+              <path d="M-40 0a40 26 0 0 1 80 0z" fill="url(#mgV1cap)"/>
+              <rect x="-9" y="-2" width="18" height="26" rx="7" fill="#f2ecdf"/>
+            </g>
+            <g transform="translate(248 274)">
+              <ellipse cx="0" cy="8" rx="30" ry="8" fill="#2b2018" opacity=".5"/>
+              <path d="M-36 0a36 24 0 0 1 72 0z" fill="url(#mgV1cap)"/>
+              <rect x="-8" y="-2" width="16" height="24" rx="7" fill="#f2ecdf"/>
+            </g>
+            <g transform="translate(352 318)">
+              <ellipse cx="0" cy="8" rx="38" ry="10" fill="#2b2018" opacity=".5"/>
+              <path d="M-44 0a44 28 0 0 1 88 0z" fill="url(#mgV1cap)"/>
+              <rect x="-10" y="-2" width="20" height="28" rx="8" fill="#f2ecdf"/>
+            </g>
+            <g transform="translate(470 288)">
+              <ellipse cx="0" cy="8" rx="32" ry="9" fill="#2b2018" opacity=".5"/>
+              <path d="M-38 0a38 25 0 0 1 76 0z" fill="url(#mgV1cap)"/>
+              <rect x="-8" y="-2" width="17" height="25" rx="7" fill="#f2ecdf"/>
+            </g>
+            <g transform="translate(592 310)">
+              <ellipse cx="0" cy="8" rx="36" ry="9" fill="#2b2018" opacity=".5"/>
+              <path d="M-42 0a42 27 0 0 1 84 0z" fill="url(#mgV1cap)"/>
+              <rect x="-9" y="-2" width="19" height="26" rx="8" fill="#f2ecdf"/>
+            </g>
+            <g transform="translate(690 276)">
+              <ellipse cx="0" cy="8" rx="27" ry="7" fill="#2b2018" opacity=".5"/>
+              <path d="M-32 0a32 22 0 0 1 64 0z" fill="url(#mgV1cap)"/>
+              <rect x="-7" y="-2" width="14" height="22" rx="6" fill="#f2ecdf"/>
+            </g>
+          </g>
+          <g opacity=".22" fill="#e9c46a">
+            <circle cx="120" cy="90" r="3"/><circle cx="300" cy="60" r="2.4"/><circle cx="520" cy="110" r="2.8"/>
+            <circle cx="660" cy="70" r="2.2"/><circle cx="210" cy="150" r="2"/>
+          </g>
+        </svg>
+        <button class="mg-play" aria-label="播放《双孢菇工厂化栽培：从发酵料床到三潮采收》">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        </button>
+      </div>
+      <div class="mg-feature-body">
+        <div class="mg-tag-row">
+          <span class="mg-tag">旗舰高清</span>
+          <span class="mg-tag mg-tag--gold">本期焦点</span>
+          <span class="mg-tag mg-tag--clay">工厂化栽培</span>
+        </div>
+        <h3>双孢菇工厂化栽培：从发酵料床到三潮采收的完整流程</h3>
+        <p>摄制组在菇房连续驻场 21 天，完整记录二次发酵、播种、覆土、降温催蕾到三潮菇采收的全部关键节点。片中给出 9 组温湿度对照数据、4 次翻料节点判断方法，以及采收轻拿轻放的具体手势，适合准备上规模的新园区对照执行。</p>
+        <div class="mg-meta-row">
+          <span class="mg-meta-author">
+            <span class="mg-avatar" style="background:#6b8f5e">菌</span>
+            菌房观察员
+          </span>
+          <span class="mg-num"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>128.4 万</span>
+          <span class="mg-num"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 11v9H3v-9zM7 11l5-8 1.6.8a3 3 0 0 1 1.5 3.6L14 9h5.5a2.5 2.5 0 0 1 2.4 3.2l-2 7A2.5 2.5 0 0 1 17.5 21H7"/></svg>9.8 万</span>
+          <span class="mg-num"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-9.4A4 4 0 0 1 12 7a4 4 0 0 1 7 3.6c0 5-7 9.4-7 9.4z"/></svg>3.2 万</span>
+          <span>32:18</span>
+        </div>
+        <div class="mg-act-row">
+          <button class="mg-act mg-act--like" data-mg-like><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 11v9H3v-9zM7 11l5-8 1.6.8a3 3 0 0 1 1.5 3.6L14 9h5.5a2.5 2.5 0 0 1 2.4 3.2l-2 7A2.5 2.5 0 0 1 17.5 21H7"/></svg><span data-mg-like-num>9.8 万</span></button>
+          <button class="mg-act mg-act--heart" data-mg-save><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-9.4A4 4 0 0 1 12 7a4 4 0 0 1 7 3.6c0 5-7 9.4-7 9.4z"/></svg><span data-mg-save-label>收藏</span></button>
+          <button class="mg-act" data-mg-share>分享</button>
+          <button class="mg-act" data-mg-modal="comment">查看评论</button>
+        </div>
+      </div>
+    </article>
+
+    <div class="mg-video-list" id="mg-video-list">
+      <article class="mg-video-item" data-mg-keyword="香菇 菌棒 转色 越夏">
+        <div class="mg-video-thumb">
+          <svg viewBox="0 0 120 120" role="img" aria-label="香菇菌棒转色期表面呈深褐色菌膜">
+            <rect width="120" height="120" fill="#3d2c20"/>
+            <rect x="26" y="18" width="68" height="84" rx="18" fill="#6b4a30"/>
+            <rect x="26" y="18" width="68" height="84" rx="18" fill="none" stroke="#8a6440" stroke-width="3"/>
+            <g fill="#c8a97c" opacity=".85">
+              <circle cx="46" cy="40" r="7"/><circle cx="74" cy="52" r="6"/><circle cx="52" cy="70" r="5.5"/>
+              <circle cx="80" cy="82" r="5"/><circle cx="42" cy="92" r="4.4"/>
+            </g>
+          </svg>
+        </div>
+        <div class="mg-video-cap">
+          <h4>香菇菌棒转色期怎么控温？越夏前必须做的三件事</h4>
+          <p>用一支视频讲清转色不均的三种典型表现，以及刺孔放气的时机判断，给出可直接抄写的温湿度区间。</p>
+          <div class="mg-video-foot"><b>香菇小院</b><span>24:06</span><span>·</span><span>62.3 万播放</span></div>
+        </div>
+      </article>
+
+      <article class="mg-video-item" data-mg-keyword="羊肚菌 播种 拱棚 越冬">
+        <div class="mg-video-thumb">
+          <svg viewBox="0 0 120 120" role="img" aria-label="羊肚菌蜂窝状菌盖特写">
+            <rect width="120" height="120" fill="#2f3428"/>
+            <ellipse cx="60" cy="86" rx="30" ry="8" fill="#1f231b"/>
+            <path d="M60 22c16 0 26 12 26 26 0 14-12 24-26 24S34 62 34 48c0-14 10-26 26-26z" fill="#c2a576"/>
+            <g fill="#8a6f47">
+              <circle cx="50" cy="40" r="5"/><circle cx="66" cy="38" r="5.4"/><circle cx="58" cy="52" r="4.6"/>
+              <circle cx="74" cy="52" r="5"/><circle cx="44" cy="54" r="4.2"/><circle cx="66" cy="64" r="4.6"/>
+            </g>
+            <rect x="54" y="70" width="12" height="22" rx="5" fill="#efe6d0"/>
+          </svg>
+        </div>
+        <div class="mg-video-cap">
+          <h4>羊肚菌大田播种全记录：从整地到越冬拱棚搭设</h4>
+          <p>跟踪川西一块 6 亩试验田，记录播种深度、菌丝定植观察与冬季保温层的搭法。</p>
+          <div class="mg-video-foot"><b>田埂上的老周</b><span>18:42</span><span>·</span><span>41.7 万播放</span></div>
+        </div>
+      </article>
+
+      <article class="mg-video-item" data-mg-keyword="平菇 出菇 大棚 湿度">
+        <div class="mg-video-thumb">
+          <svg viewBox="0 0 120 120" role="img" aria-label="平菇叠生菌盖层叠如扇形">
+            <rect width="120" height="120" fill="#26332a"/>
+            <g fill="#8fa9a0">
+              <path d="M24 78a30 22 0 0 1 60 0z" opacity=".85"/>
+              <path d="M36 60a26 19 0 0 1 52 0z" opacity=".9" fill="#a3b8ae"/>
+              <path d="M46 44a22 16 0 0 1 44 0z" fill="#bccfc4"/>
+            </g>
+            <rect x="56" y="78" width="14" height="26" rx="6" fill="#e6e2d2"/>
+            <g stroke="#e9c46a" stroke-width="1.6" opacity=".5" fill="none">
+              <path d="M20 96h80"/>
+            </g>
+          </svg>
+        </div>
+        <div class="mg-video-cap">
+          <h4>平菇大棚湿度管理：一次喷雾到底能撑多久</h4>
+          <p>用便携湿度计做 A/B 对照，演示通风与喷雾的配合节奏，避免菌盖边缘翻卷。</p>
+          <div class="mg-video-foot"><b>大棚阿良</b><span>12:35</span><span>·</span><span>88.9 万播放</span></div>
+        </div>
+      </article>
+
+      <article class="mg-video-item" data-mg-keyword="菌菇 深加工 烘干 包装">
+        <div class="mg-video-thumb">
+          <svg viewBox="0 0 120 120" role="img" aria-label="烘干后的菌菇片整齐铺在网盘上">
+            <rect width="120" height="120" fill="#3a3026"/>
+            <rect x="16" y="30" width="88" height="60" rx="8" fill="#5d4d3b"/>
+            <g stroke="#7d6a52" stroke-width="2">
+              <path d="M16 48h88M16 66h88M16 84h88"/>
+            </g>
+            <g fill="#d3b483">
+              <circle cx="34" cy="40" r="7"/><circle cx="58" cy="40" r="6"/><circle cx="82" cy="40" r="7"/>
+              <circle cx="46" cy="58" r="6"/><circle cx="70" cy="58" r="7"/><circle cx="94" cy="58" r="5.5"/>
+              <circle cx="34" cy="76" r="6"/><circle cx="58" cy="76" r="7"/><circle cx="82" cy="76" r="6"/>
+            </g>
+          </svg>
+        </div>
+        <div class="mg-video-cap">
+          <h4>菌菇深加工车间实录：烘干曲线、分级筛与真空包装</h4>
+          <p>走进规范化加工车间，看含水率检测与分级标准如何决定最终出货等级。</p>
+          <div class="mg-video-foot"><b>工厂纪实组</b><span>21:50</span><span>·</span><span>35.2 万播放</span></div>
+        </div>
+      </article>
+
+      <article class="mg-video-item" data-mg-keyword="菌种 母种 扩繁 实验室">
+        <div class="mg-video-thumb">
+          <svg viewBox="0 0 120 120" role="img" aria-label="实验室培养皿中的菌丝呈放射状生长">
+            <rect width="120" height="120" fill="#1f2f2a"/>
+            <circle cx="60" cy="60" r="42" fill="#e8ecdf" opacity=".16"/>
+            <circle cx="60" cy="60" r="36" fill="#d9e4cf" opacity=".3"/>
+            <g stroke="#f2f4e6" stroke-width="1.6" fill="none" opacity=".8">
+              <path d="M60 60L34 40M60 60L88 40M60 60L30 74M60 60L92 72M60 60v-26M60 60v30"/>
+            </g>
+            <circle cx="60" cy="60" r="6" fill="#e9c46a"/>
+          </svg>
+        </div>
+        <div class="mg-video-cap">
+          <h4>母种扩繁的洁净台操作细节：一支试管如何扩到二百瓶</h4>
+          <p>从酒精灯火焰区操作到接种钩冷却，慢镜头展示每一步的规范动作与常见污染点。</p>
+          <div class="mg-video-foot"><b>菌种实验室</b><span>15:24</span><span>·</span><span>29.6 万播放</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+  <div class="mg-empty" id="mg-video-empty">没有匹配的菌菇视频，试试“菌棒”“羊肚菌”“烘干”等关键词。</div>
+</section>
+
+<!-- ============ 关键词解析（长文，800字以上） ============ -->
+<section class="mg-section mg-band" id="mg-knowledge" aria-labelledby="mg-knowledge-title">
+  <div class="mg-sec-head">
+    <span class="mg-eyebrow">深度解析</span>
+    <h2 id="mg-knowledge-title">读懂“91蘑菇厂”：一个菌菇视频品牌官网的内容方法论</h2>
+    <p>很多人第一次看到这个名字，会以为只是一个厂区代号。事实上，91蘑菇厂这个品牌承载的是一整套关于菌菇生产的影像知识体系——它既是一个持续运营的视频平台，也是行业观察者与种植者交换经验的公共客厅。</p>
+  </div>
+
+  <div class="mg-article-grid">
+    <div class="mg-prose">
+      <h3>一、名字里的产业坐标：为什么是“厂”</h3>
+      <p>“厂”这个字，在菌菇行业里有着非常具体的分量。它不是抽象的工业符号，而是一排排菌架、一条条温控曲线、一次次翻堆与采收组成的真实节奏。91蘑菇厂把自己的官网定位成一个“影像工厂”，意思是我们不生产菌菇，但把菌菇是怎么被生产出来的这件事，拍清楚、讲明白、存下来。</p>
+      <p>这种定位让内容有了明确的取舍标准：凡是可以被复现的操作，都值得拍成视频；凡是只在口头传递的经验，都应该被转写成可检索的条目。于是你会看到，同一条出菇管理的内容，既有 30 分钟的长片记录全过程，也有 3 分钟的操作要点切片，还有配套的图文说明与温湿度对照表。官网把这些形态组织在同一个专题下，让专业观众和入门观众都能各取所需。</p>
+      <p>更重要的是，“厂”意味着持续运转。一个真实的厂子不会只在旺季开工，一个真实的内容品牌也不该只在热点时更新。91蘑菇厂官方网站坚持按周更新节奏排布内容，把行业里那些不显眼但关键的节点——换季前的设备检修、菌种保存的月度盘点、雨季来临前的棚体加固——都纳入长期选题池。这种耐心，正是一个<span class="mg-kw">垂直领域</span>内容生态能够长出<span class="mg-kw">口碑</span>的基础。</p>
+
+      <h3>二、影像如何成为可复用的生产资料</h3>
+      <p>菌菇种植有一个显著特点：同样的操作，在不同季节、不同地域、不同棚型里会呈现完全不同的结果。文字教材很难穷尽这些变量，但视频可以。一段 8 分钟的双孢菇覆土视频，能同时呈现土层的松紧、覆土的厚度、喷水的角度、菇房的光线——这些细节无法被几个参数完全替代，却恰恰是决定成败的地方。</p>
+      <p>因此，91蘑菇厂的内容团队在拍摄前会做一轮“可复用性评估”：这条内容里有多少判断动作？有没有可量化的对照？失败案例是否保留？我们希望每一支视频在一年后仍然可被检索、被引用、被讨论，而不是随着时间流走。为此，官网为每条内容建立了标签体系，包括菌种类型、栽培模式、关键工序、适用季节、风险提示五类维度。用户在站内搜索“转色”“越夏”“二次发酵”，都能得到稳定的结果，而不是一堆无关推荐。</p>
+      <p>这种结构化积累带来的另一个好处，是创作者之间的协作效率。一位在云南做林下种植的作者，可以引用另一位在东北做棚栽的作者的数据做对照；一位刚入行的新农人，可以先看入门合集建立框架，再按自己的棚型挑重点。官网在这里扮演的不是推荐算法的角色，而是编目者的角色：它把散落的内容整理成一条条可追溯的经验线索，让<span class="mg-kw">原创</span>内容真正沉淀为行业公共资产。</p>
+
+      <h3>三、社区活力从哪里来：真实、具体、可讨论</h3>
+      <p>一个视频社区的活力，很少来自于漂亮的宣传语，而更多来自于“这条视频帮我少走了弯路”这样的具体反馈。91蘑菇厂的评论区里，最常出现的是非常细碎的问题：这股味道正常吗？这个颜色是不是污染了？二潮菇要不要补营养液？这些问题看似琐碎，却构成了菌菇生产最真实的知识网络。官网的编辑团队会定期把这些高频问题整理成 FAQ 与专题复盘，让一次问答变成长期可查的资料。</p>
+      <p>我们也在刻意维护一种理性的讨论氛围。菌菇行业里存在大量“经验之谈”，但经验需要被条件限定才可靠。所以在内容审核上，官网要求涉及药剂、温控、消毒的操作类视频标注适用条件与风险提示；在社区管理上，鼓励补充“我在什么条件下试过”“结果和视频里有什么差异”。这种克制的表达方式，反而让讨论更有价值，也让品牌在专业观众心中建立起<span class="mg-kw">值得信赖</span>的印象。</p>
+      <p>与此同时，社区也需要温度。采收季凌晨三点的菇房灯光、雨季里抢修棚膜的狼狈、第一次成功出菇时的兴奋——这些片段不在操作规范里，却在无数从业者的共同记忆里。91蘑菇厂把它们做成“菌房手记”栏目，用更松散的影像语言呈现。它们不教授技术，但让人愿意留下来。一个品牌官网如果只有干货，会显得冷；如果只有情绪，会显得空。两者并存，才是一个<span class="mg-kw">持续运营</span>的内容社区应有的样子。</p>
+
+      <h3>四、品牌的下一步：把影响力用在更需要的地方</h3>
+      <p>随着内容积累增加，91蘑菇厂开始把一部分精力投向行业公共议题：小农户如何以更低成本完成基础环境改造？菌渣的资源化利用有哪些可行路径？年轻返乡者进入菌菇行业，最该先补齐哪几块认知？这些问题不适合做爆款，但值得做长期。官网为此开设了“菌菇公共课”专题，邀请科研人员、合作社负责人与一线种植者同框对话，把不同立场的判断放在一起，让观众自己形成结论。</p>
+      <p>这也是我们对<span class="mg-kw">社会责任</span>的理解：不是喊口号，而是把自己擅长的事——记录、整理、传播——用在真正需要被看见的地方。未来，91蘑菇厂官方网站会继续以高清、专业、正版为内容底线，以开放、多元、包容为社区原则，把菌菇产业的每一道工序、每一个判断、每一次失败与成功，都变成可以被后来者使用的经验。这是一件慢的事，但我们愿意一直做下去。</p>
+    </div>
+
+    <aside>
+      <div class="mg-side-card">
+        <h4>内容制作的五条底线</h4>
+        <ul class="mg-check-list">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>操作类内容必须标注适用季节与棚型条件</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>涉及药剂的环节需附风险提示与替代方案</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>失败案例同样保留，不做只有成功的剪辑</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>数据必须可复核，温湿度记录同步公开</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>引用他人素材需获授权，尊重原创版权</li>
+        </ul>
+      </div>
+      <div class="mg-side-card">
+        <h4>关键词速览</h4>
+        <p style="font-size:13.4px;color:#54625a;line-height:1.85">
+          91蘑菇厂｜菌菇视频｜菌棒管理｜出菇调控｜菌种扩繁｜采收分级｜深加工｜行业观察。站内搜索任一词，均可进入对应的内容索引页。
+        </p>
+      </div>
+      <div class="mg-quote">
+        “我们拍的不是漂亮的蘑菇，是决定蘑菇能不能长出来的那些小时。”
+        <span>—— 91蘑菇厂内容团队</span>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ 专题企划 ============ -->
+<section class="mg-section" id="mg-topics" aria-labelledby="mg-topics-title">
+  <div class="mg-sec-head">
+    <span class="mg-eyebrow">专题企划</span>
+    <h2 id="mg-topics-title">91蘑菇厂正在连载的菌菇专题与企划</h2>
+    <p>专题是官网组织长内容的方式。每个专题围绕一个具体问题持续更新，把视频、图文、数据与讨论放在一起，方便你按需追更。</p>
+  </div>
+
+  <div class="mg-topic-grid">
+    <article class="mg-topic-card">
+      <div class="mg-topic-cover">
+        <svg viewBox="0 0 400 225" role="img" aria-label="菇房温湿度控制面板与环境数据曲线示意图">
+          <rect width="400" height="225" fill="#22392a"/>
+          <rect x="36" y="34" width="150" height="94" rx="10" fill="#14251b" stroke="#6b8f5e" stroke-width="2"/>
+          <text x="52" y="64" font-size="17" fill="#a3b18a" font-family="monospace">18.6°C</text>
+          <text x="52" y="92" font-size="15" fill="#e9c46a" font-family="monospace">RH 92%</text>
+          <text x="52" y="115" font-size="11" fill="#7d9482" font-family="monospace">CO₂ 780ppm</text>
+          <g stroke="#a3b18a" stroke-width="2" fill="none" opacity=".85">
+            <path d="M210 150l30-28 26 18 30-36 28 24 30-40"/>
+          </g>
+          <g fill="#e9c46a">
+            <circle cx="240" cy="122" r="3.4"/><circle cx="296" cy="104" r="3.4"/><circle cx="354" cy="88" r="3.4"/>
+          </g>
+          <rect x="210" y="160" width="154" height="10" rx="5" fill="#3c5a44"/>
+          <rect x="210" y="160" width="112" height="10" rx="5" fill="#e9c46a"/>
+        </svg>
+        <span class="mg-topic-status">更新中 · 第 9 期</span>
+      </div>
+      <div class="mg-topic-body">
+        <h3>菇房环境调控十二讲</h3>
+        <p>从温度、湿度到二氧化碳浓度，把菇房环境拆成可单独调节的变量，每一讲配一组可复现的对照实验。</p>
+        <ul class="mg-topic-items">
+          <li>第 7 讲：降温催蕾的速率控制与异常补救</li>
+          <li>第 8 讲：通风窗口期怎么选，避免菇盖失水</li>
+          <li>第 9 讲：夜间温差与菇体品质的关系实测</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="mg-topic-card">
+      <div class="mg-topic-cover">
+        <svg viewBox="0 0 400 225" role="img" aria-label="菌棒从接种到出菇的六个阶段流程图">
+          <rect width="400" height="225" fill="#f0eee2"/>
+          <g fill="#6b8f5e">
+            <circle cx="52" cy="112" r="17"/>
+            <circle cx="122" cy="112" r="17"/>
+            <circle cx="192" cy="112" r="17"/>
+            <circle cx="262" cy="112" r="17"/>
+            <circle cx="332" cy="112" r="17"/>
+          </g>
+          <g stroke="#b08968" stroke-width="2.4">
+            <path d="M69 112h36M139 112h36M209 112h36M279 112h36"/>
+          </g>
+          <g fill="#fffdf7" font-size="13" text-anchor="middle" font-family="sans-serif">
+            <text x="52" y="117">1</text><text x="122" y="117">2</text><text x="192" y="117">3</text>
+            <text x="262" y="117">4</text><text x="332" y="117">5</text>
+          </g>
+          <g fill="#5c6d5e" font-size="11" text-anchor="middle" font-family="sans-serif">
+            <text x="52" y="150">接种</text><text x="122" y="150">发菌</text><text x="192" y="150">转色</text>
+            <text x="262" y="150">催蕾</text><text x="332" y="150">采收</text>
+          </g>
+          <rect x="52" y="176" width="300" height="9" rx="4.5" fill="#d8dcc9"/>
+          <rect x="52" y="176" width="212" height="9" rx="4.5" fill="#6b8f5e"/>
+        </svg>
+        <span class="mg-topic-status">连载中 · 已更 14 集</span>
+      </div>
+      <div class="mg-topic-body">
+        <h3>一根菌棒的四季</h3>
+        <p>以单根菌棒为线索，按时间顺序记录它在春夏秋冬里的每一次变化，适合第一次做菌棒的新手完整跟练。</p>
+        <ul class="mg-topic-items">
+          <li>春季：配料含水率与装袋松紧的实操差异</li>
+          <li>夏季：高温期的遮阴、通风与补水策略</li>
+          <li>秋冬：转茬管理与菌棒休养期的养分补充</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="mg-topic-card">
+      <div class="mg-topic-cover">
+        <svg viewBox="0 0 400 225" role="img" aria-label="返乡青年在菌棚中做影像记录的场景插画">
+          <rect width="400" height="225" fill="#2e3a2d"/>
+          <path d="M0 168h400v57H0z" fill="#1f2a1f"/>
+          <g>
+            <circle cx="150" cy="82" r="21" fill="#e2c9a4"/>
+            <path d="M129 82a21 21 0 0 1 42 0z" fill="#3f3a2c"/>
+            <rect x="130" y="106" width="41" height="62" rx="14" fill="#b08968"/>
+          </g>
+          <rect x="196" y="88" width="70" height="46" rx="8" fill="#14201a" stroke="#a3b18a" stroke-width="2"/>
+          <circle cx="231" cy="111" r="13" fill="none" stroke="#e9c46a" stroke-width="2.4"/>
+          <rect x="262" y="98" width="14" height="9" rx="3" fill="#a3b18a"/>
+          <g fill="#8fa98c" opacity=".7">
+            <rect x="300" y="46" width="8" height="122" rx="4"/>
+            <rect x="330" y="46" width="8" height="122" rx="4"/>
+            <rect x="286" y="60" width="66" height="7" rx="3.5"/>
+            <rect x="286" y="96" width="66" height="7" rx="3.5"/>
+            <rect x="286" y="132" width="66" height="7" rx="3.5"/>
+          </g>
+        </svg>
+        <span class="mg-topic-status">策划中 · 招募嘉宾</span>
+      </div>
+      <div class="mg-topic-body">
+        <h3>返乡做菌菇的年轻人</h3>
+        <p>走访六位返乡创业者，聊清楚他们怎么做决策、怎么算账、怎么面对第一年的亏损与第二年的转机。</p>
+        <ul class="mg-topic-items">
+          <li>访谈：从城市摄影到林下种植的三年过渡</li>
+          <li>手记：一笔 8 万元的启动资金都花在哪了</li>
+          <li>复盘：第一年失败之后，他们改了什么</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 创作者矩阵（双列简介） ============ -->
+<section class="mg-section mg-band--sage" id="mg-authors" aria-labelledby="mg-authors-title">
+  <div class="mg-sec-head">
+    <span class="mg-eyebrow">创作者</span>
+    <h2 id="mg-authors-title">91蘑菇厂认证创作者：把经验拍成可复用的菌菇影像</h2>
+    <p>他们来自不同产区、不同规模的生产一线，共同点是愿意把真实过程完整拍下来。官网为每位认证创作者提供稳定的发布位与高清下载支持。</p>
+  </div>
+
+  <div class="mg-author-grid">
+    <article class="mg-author-card">
+      <div class="mg-author-face" style="background:#6b8f5e">菌</div>
+      <div>
+        <h3 class="mg-author-name">菌房观察员 <span class="mg-author-role">认证创作者</span></h3>
+        <div class="mg-author-field">工厂化栽培 · 环境调控</div>
+        <div class="mg-author-nums"><span>作品 <b>186</b></span><span>粉丝 <b>41.2 万</b></span></div>
+        <p class="mg-author-bio">在华东一家双孢菇工厂做了九年技术员，习惯用数据说话。镜头里常出现温湿度记录本和手写的对照表，解说克制、步骤清楚。他希望新入行的人少走三年弯路，所以每条长片都会附上可打印的操作清单。</p>
+        <div class="mg-author-more"><button data-mg-modal="author" data-author="菌房观察员">查看完整档案</button></div>
+      </div>
+    </article>
+
+    <article class="mg-author-card">
+      <div class="mg-author-face" style="background:#b08968">周</div>
+      <div>
+        <h3 class="mg-author-name">田埂上的老周 <span class="mg-author-role">认证创作者</span></h3>
+        <div class="mg-author-field">大田栽培 · 羊肚菌</div>
+        <div class="mg-author-nums"><span>作品 <b>97</b></span><span>粉丝 <b>28.6 万</b></span></div>
+        <p class="mg-author-bio">川西人，种了十一年羊肚菌。视频多在田间拍，风噪和脚步声都不修掉，因为他觉得那就是真实的工作环境。他擅长把一整季的种植拆成十几个短片段，观众能清楚看到每一周田里的变化与他的判断依据。</p>
+        <div class="mg-author-more"><button data-mg-modal="author" data-author="田埂上的老周">查看完整档案</button></div>
+      </div>
+    </article>
+
+    <article class="mg-author-card">
+      <div class="mg-author-face" style="background:#8fa9a0">良</div>
+      <div>
+        <h3 class="mg-author-name">大棚阿良 <span class="mg-author-role">认证创作者</span></h3>
+        <div class="mg-author-field">平菇大棚 · 家庭农场</div>
+        <div class="mg-author-nums"><span>作品 <b>132</b></span><span>粉丝 <b>33.8 万</b></span></div>
+        <p class="mg-author-bio">经营两个平菇大棚，夫妻二人搭档拍摄。阿良负责操作，妻子负责记录和剪辑。内容偏向低成本改造与实用小工具，很多人是从他的一条“旧棚膜再利用”视频开始关注他的。更新稳定在每周两条，从不拖更。</p>
+        <div class="mg-author-more"><button data-mg-modal="author" data-author="大棚阿良">查看完整档案</button></div>
+      </div>
+    </article>
+
+    <article class="mg-author-card">
+      <div class="mg-author-face" style="background:#3f5f45">实</div>
+      <div>
+        <h3 class="mg-author-name">菌种实验室 <span class="mg-author-role">机构创作者</span></h3>
+        <div class="mg-author-field">菌种研发 · 洁净操作</div>
+        <div class="mg-author-nums"><span>作品 <b>74</b></span><span>粉丝 <b>19.5 万</b></span></div>
+        <p class="mg-author-bio">一支五人小团队，日常在实验室做母种与栽培种扩繁。他们的视频以显微画面与慢镜头见长，把看不见的菌丝生长做成可欣赏的影像。团队坚持公开每一批次的污染率数据，被不少同行当作教学素材引用。</p>
+        <div class="mg-author-more"><button data-mg-modal="author" data-author="菌种实验室">查看完整档案</button></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 数据榜单 ============ -->
+<section class="mg-section mg-band--deep" id="mg-rank" aria-labelledby="mg-rank-title">
+  <div class="mg-sec-head">
+    <span class="mg-eyebrow">数据榜单</span>
+    <h2 id="mg-rank-title">本周菌菇内容榜单：热度、新人、口碑三线观察</h2>
+    <p>榜单由播放、完播、收藏与评论质量综合计算，每周一更新。我们更看重能被反复观看的内容，而不是一次性的流量高峰。</p>
+  </div>
+
+  <div class="mg-rank-wrap">
+    <div class="mg-rank-col">
+      <h3><i></i>热度榜</h3>
+      <ul class="mg-rank-list">
+        <li><span class="mg-rank-no">01</span><span class="mg-rank-title">双孢菇三潮采收全流程</span><span class="mg-rank-val">128.4 万</span></li>
+        <li><span class="mg-rank-no">02</span><span class="mg-rank-title">平菇大棚湿度 A/B 对照</span><span class="mg-rank-val">88.9 万</span></li>
+        <li><span class="mg-rank-no">03</span><span class="mg-rank-title">香菇菌棒转色三件事</span><span class="mg-rank-val">62.3 万</span></li>
+        <li><span class="mg-rank-no">04</span><span class="mg-rank-title">羊肚菌越冬拱棚搭设</span><span class="mg-rank-val">41.7 万</span></li>
+        <li><span class="mg-rank-no">05</span><span class="mg-rank-title">菌菇烘干曲线与分级</span><span class="mg-rank-val">35.2 万</span></li>
+      </ul>
+    </div>
+    <div class="mg-rank-col">
+      <h3><i></i>新人榜</h3>
+      <ul class="mg-rank-list">
+        <li><span class="mg-rank-no">01</span><span class="mg-rank-title">小林的山核桃林下菇</span><span class="mg-rank-val">首月 3 片</span></li>
+        <li><span class="mg-rank-no">02</span><span class="mg-rank-title">阿珍的菌菇厨房</span><span class="mg-rank-val">完播 68%</span></li>
+        <li><span class="mg-rank-no">03</span><span class="mg-rank-title">老棚新拍的日常</span><span class="mg-rank-val">收藏 1.2 万</span></li>
+        <li><span class="mg-rank-no">04</span><span class="mg-rank-title">县城菌菇合作社</span><span class="mg-rank-val">互动 96%</span></li>
+        <li><span class="mg-rank-no">05</span><span class="mg-rank-title">菌渣再利用试验</span><span class="mg-rank-val">追更 4.1 千</span></li>
+      </ul>
+    </div>
+    <div class="mg-rank-col">
+      <h3><i></i>口碑榜</h3>
+      <ul class="mg-rank-list">
+        <li><span class="mg-rank-no">01</span><span class="mg-rank-title">菇房环境调控十二讲</span><span class="mg-rank-val">4.9 分</span></li>
+        <li><span class="mg-rank-no">02</span><span class="mg-rank-title">一根菌棒的四季</span><span class="mg-rank-val">4.9 分</span></li>
+        <li><span class="mg-rank-no">03</span><span class="mg-rank-title">母种扩繁洁净操作</span><span class="mg-rank-val">4.8 分</span></li>
+        <li><span class="mg-rank-no">04</span><span class="mg-rank-title">菌房手记·雨季抢修</span><span class="mg-rank-val">4.8 分</span></li>
+        <li><span class="mg-rank-no">05</span><span class="mg-rank-title">菌菇公共课第三期</span><span class="mg-rank-val">4.7 分</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 用户评价（双列短评） ============ -->
+<section class="mg-section" id="mg-community" aria-labelledby="mg-community-title">
+  <div class="mg-sec-head">
+    <span class="mg-eyebrow">社区口碑</span>
+    <h2 id="mg-community-title">来自菌菇从业者与观众的真实评价</h2>
+    <p>以下评价来自官网评论区与创作者后台反馈，均经本人授权展示。我们不修饰措辞，保留不同视角与不同语气。</p>
+  </div>
+
+  <div class="mg-review-grid">
+    <article class="mg-review">
+      <div class="mg-review-top"><span class="mg-review-stars">★★★★★</span><span class="mg-review-user">种菇第七年</span><span class="mg-review-tag">技术参考</span></div>
+      <p>条件写得这么细的视频真不多。转色那期直接给了温度区间和刺孔时间，我照着调了一棚，出菇整齐度肉眼可见变好。唯一希望以后能补上不同棚型的对比。</p>
+    </article>
+    <article class="mg-review">
+      <div class="mg-review-top"><span class="mg-review-stars">★★★★☆</span><span class="mg-review-user">山里的阿禾</span><span class="mg-review-tag">新手视角</span></div>
+      <p>刚入行三个月，把“一根菌棒的四季”从头看到尾，算是把整个流程串起来了。节奏对新人很友好，就是有些专业词还是得反复查，建议加个小词典。</p>
+    </article>
+    <article class="mg-review">
+      <div class="mg-review-top"><span class="mg-review-stars">★★★★★</span><span class="mg-review-user">合作社老陈</span><span class="mg-review-tag">组织观看</span></div>
+      <p>我们社里每月组织一次集体看片，就放官网的工厂化系列，看完现场讨论。比请人来讲课效果稳定，还能回看。这个形式希望一直保留下去。</p>
+    </article>
+    <article class="mg-review">
+      <div class="mg-review-top"><span class="mg-review-stars">★★★★☆</span><span class="mg-review-user">菇凉小满</span><span class="mg-review-tag">生活记录</span></div>
+      <p>菌房手记那几期很打动人，尤其是凌晨采收那段，没什么解说，就是灯和人。看得我想起自己刚开始种菇的那年，很真实，也很温暖。</p>
+    </article>
+    <article class="mg-review">
+      <div class="mg-review-top"><span class="mg-review-stars">★★★★★</span><span class="mg-review-user">实验室小许</span><span class="mg-review-tag">专业内容</span></div>
+      <p>母种扩繁那期的慢镜头做得很好，接种钩冷却的细节平时很难看清。作为教学材料已经推荐给学弟学妹，比教材上的示意图直观多了。</p>
+    </article>
+    <article class="mg-review">
+      <div class="mg-review-top"><span class="mg-review-stars">★★★☆☆</span><span class="mg-review-user">北方的棚</span><span class="mg-review-tag">改进建议</span></div>
+      <p>内容质量没得说，但希望多拍一点北方干燥气候的案例。现在大部分是南方湿润地区的经验，直接照搬会有偏差，这点对新手挺关键的。</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 企业动态 + 合作品牌 ============ -->
+<section class="mg-section mg-band" id="mg-dynamics" aria-labelledby="mg-dynamics-title">
+  <div class="mg-sec-head">
+    <span class="mg-eyebrow">企业动态</span>
+    <h2 id="mg-dynamics-title">91蘑菇厂官方发布与内容更新日志</h2>
+    <p>这里记录品牌与平台的近期动向，包括内容上线、功能升级与线下活动安排，方便长期关注我们的用户了解进度。</p>
+  </div>
+
+  <div class="mg-article-grid">
+    <div class="mg-dynamic-list">
+      <article class="mg-dynamic-item">
+        <div class="mg-dynamic-date">2026.11.18</div>
+        <div>
+          <h4>“菇房环境调控十二讲”第九期上线，新增夜间温差实测数据</h4>
+          <p>本期加入两组连续七天的温度曲线对比，并附上可下载的记录模板，方便观众在自己的棚里复现实验。</p>
+        </div>
+      </article>
+      <article class="mg-dynamic-item">
+        <div class="mg-dynamic-date">2026.11.12</div>
+        <div>
+          <h4>第二届菌菇影像挑战开放报名，投稿通道在官网同步开启</h4>
+          <p>本届设置“工序记录”“人物故事”“公共议题”三个方向，评审团新增四位行业顾问，报名截止到十二月中旬。</p>
+        </div>
+      </article>
+      <article class="mg-dynamic-item">
+        <div class="mg-dynamic-date">2026.11.05</div>
+        <div>
+          <h4>创作者后台升级：高清原片支持批量下载与授权凭证导出</h4>
+          <p>本次升级优化了大文件传输稳定性，并为授权素材生成可追溯的凭证编号，进一步保障原创内容权益。</p>
+        </div>
+      </article>
+      <article class="mg-dynamic-item">
+        <div class="mg-dynamic-date">2026.10.27</div>
+        <div>
+          <h4>官网内容索引页改版，新增按栽培模式与季节的双维筛选</h4>
+          <p>改版后，用户可组合“棚栽 / 林下 / 工厂化”与“春 / 夏 / 秋 / 冬”快速定位内容，检索效率明显提升。</p>
+        </div>
+      </article>
+    </div>
+
+    <div>
+      <h3 style="font-size:16px;font-weight:800;color:var(--mg-forest-deep);margin-bottom:14px">合作品牌与伙伴</h3>
+      <div class="mg-partner-grid">
+        <div class="mg-partner">
+          <div class="mg-partner-mark" style="background:#6b8f5e">菌</div>
+          <div class="mg-partner-name">菌研社</div>
+          <div class="mg-partner-desc">技术顾问</div>
+        </div>
+        <div class="mg-partner">
+          <div class="mg-partner-mark" style="background:#b08968">棚</div>
+          <div class="mg-partner-name">棚友设备</div>
+          <div class="mg-partner-desc">环境控制</div>
+        </div>
+        <div class="mg-partner">
+          <div class="mg-partner-mark" style="background:#3f5f45">田</div>
+          <div class="mg-partner-name">田野影像</div>
+          <div class="mg-partner-desc">联合摄制</div>
+        </div>
+        <div class="mg-partner">
+          <div class="mg-partner-mark" style="background:#8a7a4a">仓</div>
+          <div class="mg-partner-name">鲜仓冷链</div>
+          <div class="mg-partner-desc">物流支持</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="mg-section mg-section--tight" id="mg-faq" aria-labelledby="mg-faq-title">
+  <div class="mg-sec-head">
+    <span class="mg-eyebrow">帮助中心</span>
+    <h2 id="mg-faq-title">关于91蘑菇厂官网的常见问题</h2>
+    <p>如果你在使用过程中遇到问题，可以先查看以下条目；仍未解决的，可通过页面底部的投稿与联系方式找到我们。</p>
+  </div>
+
+  <div class="mg-faq">
+    <details open>
+      <summary>91蘑菇厂是一个种植企业还是内容平台？</summary>
+      <p>91蘑菇厂是一个以菌菇为主题的视频内容品牌，官方网站承担内容发布、创作者协作与社区交流的功能。我们不直接销售菌菇产品，但会与种植主体、设备厂商及科研机构合作，把真实生产场景拍摄成可复用的影像资料。</p>
+    </details>
+    <details>
+      <summary>官网的视频可以用于教学或内部培训吗？</summary>
+      <p>可以。站内标注“开放授权”的内容支持在非商业教学场景中使用，建议保留来源说明。如需用于商业培训或对外课程，请通过投稿与联系入口提交申请，我们会提供正式的授权凭证与高清文件。</p>
+    </details>
+    <details>
+      <summary>我想投稿自己的菌菇种植视频，有什么要求？</summary>
+      <p>建议画面稳定、光线充足，能清楚呈现关键操作细节；涉及温湿度、配方等内容请尽量提供可复核的数据。首次投稿可选择“工序记录”方向，时长控制在 3 至 20 分钟之间更容易通过初审。</p>
+    </details>
+    <details>
+      <summary>为什么有些视频标注了风险提示？</summary>
+      <p>菌菇生产中的部分环节涉及消毒、药剂或高温设备，存在操作风险。官网要求此类内容标注适用条件与注意事项，目的是提醒观众结合自身棚型与当地规范判断，而不是简单照搬。</p>
+    </details>
+    <details>
+      <summary>榜单的排名依据是什么？会被人为干预吗？</summary>
+      <p>榜单综合播放、完播率、收藏与评论质量计算，按周更新。我们不对单条内容做人工加权，但会对刷量、诱导互动等异常数据做剔除处理，以保证榜单能反映真实观看价值。</p>
+    </details>
+    <details>
+      <summary>站内搜索支持哪些关键词？</summary>
+      <p>支持菌种名称、工序环节、栽培模式、季节与作者昵称等。例如输入“菌棒”“羊肚菌”“烘干”“越夏”都可得到结果。若搜索无结果，页面会给出相关方向建议。</p>
+    </details>
+  </div>
+</section>
+
+<!-- ============ 投稿 / 联系 CTA ============ -->
+<section class="mg-section mg-section--tight" id="mg-contact">
+  <div class="mg-cta">
+    <div>
+      <h2>把你的菌菇经验，交给91蘑菇厂记录下来</h2>
+      <p>无论你是在做工厂化栽培、林下种植还是家庭小棚，只要过程真实、细节清楚，都欢迎投稿。官网提供剪辑建议、字幕规范与高清下载支持，让好内容被更多人看见。</p>
+    </div>
+    <div class="mg-cta-actions">
+      <button class="mg-btn mg-btn--gold" data-mg-modal="submit">我要投稿</button>
+      <button class="mg-btn mg-btn--ghost" data-mg-share>分享本页</button>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ S8 页脚 ============ -->
+<footer class="mg-footer">
+  <div class="mg-footer-inner">
+    <div class="mg-footer-top">
+      <div class="mg-footer-brand">
+        <div class="mg-logo" style="gap:10px">
+          <svg class="mg-logo-mark" viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="15" fill="#2c4a32"/>
+            <path d="M32 11c-10.5 0-18.6 6.4-18.6 14.6h37.2C50.6 17.4 42.5 11 32 11z" fill="#e9c46a"/>
+            <rect x="25.5" y="25.6" width="13" height="23" rx="5.5" fill="#f6f4ec"/>
+          </svg>
+          <span class="mg-logo-text">
+            <span class="mg-logo-name">91蘑菇厂</span>
+            <span class="mg-logo-sub">MUSHROOM&nbsp;FACTORY</span>
+          </span>
+        </div>
+        <p class="mg-footer-desc">91蘑菇厂官方网站，专注菌菇产业的原创高清视频内容平台。我们持续运营、深耕垂直领域，以专业与匠心记录每一道工序，为创作者与从业者搭建值得信赖的内容生态。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul class="mg-footer-links">
+          <li><a href="#mg-videos">精品视频</a></li>
+          <li><a href="#mg-knowledge">关键词解析</a></li>
+          <li><a href="#mg-topics">专题企划</a></li>
+          <li><a href="#mg-rank">数据榜单</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>社区与帮助</h4>
+        <ul class="mg-footer-links">
+          <li><a href="#mg-authors">创作者矩阵</a></li>
+          <li><a href="#mg-community">用户评价</a></li>
+          <li><a href="#mg-faq">常见问题</a></li>
+          <li><a href="#mg-dynamics">企业动态</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系我们</h4>
+        <ul class="mg-footer-links">
+          <li><a href="#mg-contact">投稿与授权</a></li>
+          <li><a href="#mg-contact">商务合作</a></li>
+          <li><a href="#mg-faq">使用规范</a></li>
+          <li><a href="#mg-top">回到首页</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mg-footer-bottom">
+      <span>© 2026 91蘑菇厂 官方网站 · 版权所有 · 持续运营中</span>
+      <span>内容均为原创或已获授权，转载请保留来源说明</span>
+    </div>
+  </div>
+</footer>
+
+<!-- 回到顶部 -->
+<button class="mg-top-btn" id="mg-top-btn" aria-label="回到页面顶部">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<!-- 弹窗：投稿 -->
+<div class="mg-modal" id="mg-modal-submit" role="dialog" aria-modal="true" aria-labelledby="mg-modal-submit-title">
+  <div class="mg-modal-box">
+    <button class="mg-modal-close" data-mg-close aria-label="关闭">✕</button>
+    <h3 id="mg-modal-submit-title">投稿入口</h3>
+    <p>填写基本信息即可提交，编辑团队会在三个工作日内回复初审意见。</p>
+    <form id="mg-submit-form">
+      <div class="mg-field">
+        <label for="mg-f-name">你的昵称</label>
+        <input id="mg-f-name" type="text" placeholder="例如：大棚阿良" required>
+      </div>
+      <div class="mg-field">
+        <label for="mg-f-direction">投稿方向</label>
+        <select id="mg-f-direction">
+          <option>工序记录</option>
+          <option>人物故事</option>
+          <option>公共议题</option>
+          <option>菌房手记</option>
+        </select>
+      </div>
+      <div class="mg-field">
+        <label for="mg-f-desc">内容简介</label>
+        <textarea id="mg-f-desc" placeholder="简单描述视频拍摄的场景、时长与关键工序"></textarea>
+      </div>
+      <button type="submit" class="mg-btn mg-btn--primary mg-modal-submit">提交投稿</button>
+    </form>
+  </div>
+</div>
+
+<!-- 弹窗：评论 -->
+<div class="mg-modal" id="mg-modal-comment" role="dialog" aria-modal="true" aria-labelledby="mg-modal-comment-title">
+  <div class="mg-modal-box">
+    <button class="mg-modal-close" data-mg-close aria-label="关闭">✕</button>
+    <h3 id="mg-modal-comment-title">本期焦点视频评论</h3>
+    <p>共 1,284 条讨论，以下为编辑精选。</p>
+    <div class="mg-review-grid" style="grid-template-columns:1fr">
+      <article class="mg-review">
+        <div class="mg-review-top"><span class="mg-review-stars">★★★★★</span><span class="mg-review-user">三潮菇的老李</span></div>
+        <p>覆土厚度那块讲得特别到位，我之前一直凭手感，看完拿尺子量了一遍，确实偏薄了。</p>
+      </article>
+      <article class="mg-review">
+        <div class="mg-review-top"><span class="mg-review-stars">★★★★☆</span><span class="mg-review-user">刚搭棚的小吴</span></div>
+        <p>请问二次发酵的温度曲线能单独发一份吗？想打印出来贴在菇房门口。</p>
+      </article>
+      <article class="mg-review">
+        <div class="mg-review-top"><span class="mg-review-stars">★★★★★</span><span class="mg-review-user">菌房夜班</span></div>
+        <p>凌晨巡棚那段太真实了，看到自己上班的地方出现在视频里还挺感动。</p>
+      </article>
+    </div>
+  </div>
+</div>
+
+<!-- 弹窗：作者档案 -->
+<div class="mg-modal" id="mg-modal-author" role="dialog" aria-modal="true" aria-labelledby="mg-modal-author-title">
+  <div class="mg-modal-box">
+    <button class="mg-modal-close" data-mg-close aria-label="关闭">✕</button>
+    <h3 id="mg-modal-author-title">创作者档案</h3>
+    <p id="mg-author-modal-text">该创作者已在91蘑菇厂官网认证，持续发布菌菇相关原创内容。</p>
+    <button class="mg-btn mg-btn--primary" data-mg-close style="width:100%;justify-content:center">知道了</button>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="mg-toast" id="mg-toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- 移动端导航 ---------- */
+  var navToggle = document.getElementById('mg-nav-toggle');
+  var mobileNav = document.getElementById('mg-mobile-nav');
+  if (navToggle && mobileNav) {
+    navToggle.addEventListener('click', function(){
+      var open = mobileNav.classList.toggle('is-open');
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    mobileNav.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        mobileNav.classList.remove('is-open');
+        navToggle.setAttribute('aria-expanded','false');
+      });
+    });
+  }
+
+  /* ---------- Toast ---------- */
+  var toast = document.getElementById('mg-toast');
+  var toastTimer = null;
+  function showToast(msg){
+    if (!toast) return;
+    toast.textContent = msg;
+    toast.classList.add('is-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('is-show'); }, 2200);
+  }
+
+  /* ---------- 搜索反馈 ---------- */
+  var searchInput = document.getElementById('mg-search-input');
+  var searchTip = document.getElementById('mg-search-tip');
+  var videoList = document.getElementById('mg-video-list');
+  var videoEmpty = document.getElementById('mg-video-empty');
+
+  function runSearch(){
+    var q = (searchInput.value || '').trim().toLowerCase();
+    if (!searchTip) return;
+    if (!q) {
+      searchTip.classList.remove('is-show');
+      if (videoList) {
+        videoList.querySelectorAll('.mg-video-item').forEach(function(it){ it.style.display = ''; });
+      }
+      if (videoEmpty) videoEmpty.classList.remove('is-show');
+      return;
+    }
+    var hits = [];
+    if (videoList) {
+      videoList.querySelectorAll('.mg-video-item').forEach(function(item){
+        var kw = (item.getAttribute('data-mg-keyword') || '').toLowerCase();
+        var txt = item.textContent.toLowerCase();
+        var match = kw.indexOf(q) > -1 || txt.indexOf(q) > -1;
+        item.style.display = match ? '' : 'none';
+        if (match) hits.push(item.querySelector('h4') ? item.querySelector('h4').textContent : '');
+      });
+    }
+    if (hits.length) {
+      searchTip.textContent = '找到 ' + hits.length + ' 条与“' + q + '”相关的菌菇视频：' + hits.slice(0,2).join(' / ') + (hits.length > 2 ? ' 等' : '');
+      searchTip.classList.add('is-show');
+      if (videoEmpty) videoEmpty.classList.remove('is-show');
+    } else {
+      searchTip.textContent = '暂无与“' + q + '”匹配的菌菇视频，可尝试“菌棒”“羊肚菌”“烘干”“越夏”等关键词。';
+      searchTip.classList.add('is-show');
+      if (videoEmpty) videoEmpty.classList.add('is-show');
+    }
+  }
+  if (searchInput) {
+    searchInput.addEventListener('input', runSearch);
+    searchInput.addEventListener('keydown', function(e){
+      if (e.key === 'Enter') { e.preventDefault(); runSearch(); }
+    });
+  }
+
+  /* ---------- 点赞 / 收藏 ---------- */
+  document.querySelectorAll('[data-mg-like]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var numEl = btn.querySelector('[data-mg-like-num]');
+      if (!numEl) return;
+      var on = btn.classList.toggle('is-on');
+      var base = numEl.getAttribute('data-base');
+      if (!base) {
+        base = parseFloat(numEl.textContent) || 0;
+        numEl.setAttribute('data-base', base);
+      }
+      var val = parseFloat(base);
+      val = on ? val + 0.1 : val;
+      numEl.textContent = (on ? (val.toFixed(1)) : base) + ' 万';
+      showToast(on ? '已点赞，感谢你的支持' : '已取消点赞');
+    });
+  });
+
+  document.querySelectorAll('[data-mg-save]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var label = btn.querySelector('[data-mg-save-label]');
+      var on = btn.classList.toggle('is-on');
+      if (label) label.textContent = on ? '已收藏' : '收藏';
+      showToast(on ? '已加入收藏，可在个人中心查看' : '已取消收藏');
+    });
+  });
+
+  /* ---------- 分享 / 复制 ---------- */
+  document.querySelectorAll('[data-mg-share]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var done = function(){ showToast('链接已复制，可分享给同行好友'); };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText('91蘑菇厂官方网站 · 菌菇视频内容平台').then(done, function(){
+          showToast('已打开分享面板，请选择分享渠道');
+        });
+      } else {
+        showToast('已生成分享卡片，请选择微信或微博');
+      }
+    });
+  });
+
+  /* ---------- 弹窗 ---------- */
+  var modals = {};
+  document.querySelectorAll('.mg-modal').forEach(function(m){ modals[m.id] = m; });
+
+  function openModal(id){
+    var m = modals[id];
+    if (!m) return;
+    m.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+    var f = m.querySelector('input, textarea, button');
+    if (f) setTimeout(function(){ f.focus(); }, 60);
+  }
+  function closeAllModals(){
+    Object.keys(modals).forEach(function(k){ modals[k].classList.remove('is-open'); });
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('[data-mg-modal]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var kind = btn.getAttribute('data-mg-modal');
+      if (kind === 'author') {
+        var name = btn.getAttribute('data-author') || '该创作者';
+        var textEl = document.getElementById('mg-author-modal-text');
+        if (textEl) textEl.textContent = name + ' 是91蘑菇厂官方认证创作者，长期在官网发布菌菇种植与生产实录内容，作品均标注适用条件与操作风险，欢迎在对应视频下留言交流。';
+        openModal('mg-modal-author');
+        return;
+      }
+      openModal('mg-modal-' + kind);
+    });
+  });
+
+  document.querySelectorAll('[data-mg-close]').forEach(function(btn){
+    btn.addEventListener('click', closeAllModals);
+  });
+  Object.keys(modals).forEach(function(k){
+    modals[k].addEventListener('click', function(e){
+      if (e.target === modals[k]) closeAllModals();
+    });
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape') closeAllModals();
+  });
+
+  /* ---------- 投稿表单 ---------- */
+  var submitForm = document.getElementById('mg-submit-form');
+  if (submitForm) {
+    submitForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      var nameEl = document.getElementById('mg-f-name');
+      var name = nameEl && nameEl.value.trim();
+      if (!name) { showToast('请先填写你的昵称'); if (nameEl) nameEl.focus(); return; }
+      closeAllModals();
+      submitForm.reset();
+      showToast('投稿已提交，' + name + '，我们会尽快回复初审意见');
+    });
+  }
+
+  /* ---------- 回到顶部 ---------- */
+  var topBtn = document.getElementById('mg-top-btn');
+  function onScroll(){
+    if (!topBtn) return;
+    if (window.scrollY > 480) topBtn.classList.add('is-show');
+    else topBtn.classList.remove('is-show');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (topBtn) {
+    topBtn.addEventListener('click', function(){
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  /* ---------- 首屏数字滚动 ---------- */
+  var statsDone = false;
+  function animateStats(){
+    if (statsDone) return;
+    statsDone = true;
+    document.querySelectorAll('[data-mg-count]').forEach(function(el){
+      var target = parseInt(el.getAttribute('data-mg-count'), 10);
+      if (!target || target < 10) return;
+      var suffix = el.querySelector('small') ? el.querySelector('small').outerHTML : '';
+      var start = Math.max(0, Math.floor(target * 0.72));
+      var cur = start;
+      var step = Math.max(1, Math.round((target - start) / 26));
+      var timer = setInterval(function(){
+        cur += step;
+        if (cur >= target) { cur = target; clearInterval(timer); }
+        el.innerHTML = cur + suffix;
+      }, 26);
+    });
+  }
+  if ('IntersectionObserver' in window) {
+    var hero = document.querySelector('.mg-hero-stats');
+    if (hero) {
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){
+          if (en.isIntersecting) { animateStats(); io.disconnect(); }
+        });
+      }, { threshold: 0.35 });
+      io.observe(hero);
+    } else {
+      animateStats();
+    }
+  } else {
+    animateStats();
+  }
+
+  /* ---------- 导航高亮 ---------- */
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('.mg-nav a'));
+  var sections = navLinks.map(function(a){
+    var id = a.getAttribute('href');
+    return id && id.length > 1 ? document.querySelector(id) : null;
+  });
+  function syncNav(){
+    if (!sections.length) return;
+    var pos = window.scrollY + 170;
+    var current = 0;
+    sections.forEach(function(sec, i){
+      if (sec && sec.offsetTop <= pos) current = i;
+    });
+    navLinks.forEach(function(a, i){
+      if (i === current) a.classList.add('is-active');
+      else a.classList.remove('is-active');
+    });
+  }
+  window.addEventListener('scroll', syncNav, { passive: true });
+  syncNav();
+
+  /* ---------- 卡片悬停键盘可达提示 ---------- */
+  document.querySelectorAll('.mg-video-item').forEach(function(card){
+    card.addEventListener('keydown', function(e){
+      if (e.key === 'Enter') { showToast('正在打开该菌菇视频详情'); }
+    });
+  });
+})();
+</script>
+</body>
+  </html>
